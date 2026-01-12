@@ -115,8 +115,6 @@ Admin Dashboard
 <img width="945" height="437" alt="image" src="https://github.com/user-attachments/assets/da1f5f30-ff16-480a-aaa6-c41a949207c5" />
 
 
-<img src="./images/demo-admin.png" alt="Admin" width="100%">
-
 (Lưu ý: Hãy tạo thư mục images trong repo và bỏ ảnh chụp màn hình vào đó, đặt tên tương ứng)
 
 🚀 Hướng dẫn cài đặt (Installation)
