@@ -1,0 +1,258 @@
+/* account.css */
+.account-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 100px 20px 40px;
+}
+
+.account-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.account-content > h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* User Info Styling */
+.account-content > div:first-of-type {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.account-content > div:first-of-type::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+}
+
+/* Account Actions */
+.account-actions {
+  display: grid;
+  gap: 25px;
+}
+
+.admin-actions,
+.user-actions,
+.common-actions {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.admin-actions:hover,
+.user-actions:hover,
+.common-actions:hover {
+  transform: translateY(-5px);
+}
+
+.admin-actions h3,
+.user-actions h3,
+.common-actions h3 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #f1f3f4;
+  color: #2c3e50;
+  font-size: 1.3rem;
+}
+
+.admin-actions h3::before {
+  content: '👑';
+  margin-right: 10px;
+  padding: 10px;
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  border-radius: 12px;
+  font-size: 1.2rem;
+}
+
+.user-actions h3::before {
+  content: '👥';
+  margin-right: 10px;
+  padding: 10px;
+  background: linear-gradient(135deg, #4ecdc4, #44a08d);
+  border-radius: 12px;
+  font-size: 1.2rem;
+}
+
+.common-actions h3::before {
+  content: '⚙️';
+  margin-right: 10px;
+  padding: 10px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 12px;
+  font-size: 1.2rem;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.action-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s;
+}
+
+.action-btn:hover::before {
+  left: 100%;
+}
+
+.action-btn:hover {
+  transform: translateY(-2px);
+}
+
+.action-btn:active {
+  transform: scale(0.95);
+}
+
+/* Admin Buttons */
+.admin-btn {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+}
+
+.admin-btn:hover {
+  box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+}
+
+/* User Buttons */
+.user-btn {
+  background: linear-gradient(135deg, #4ecdc4, #44a08d);
+}
+
+.user-btn:hover {
+  box-shadow: 0 8px 25px rgba(78, 205, 196, 0.4);
+}
+
+/* Common Buttons */
+.common-btn {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.common-btn:hover {
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+/* Logout Button */
+.logout-btn {
+  background: linear-gradient(135deg, #ff7675, #d63031);
+  grid-column: span 2;
+}
+
+.logout-btn:hover {
+  box-shadow: 0 8px 25px rgba(255, 118, 117, 0.4);
+}
+
+/* Loading State */
+.account-container > div[style*="display: flex"] {
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  color: white;
+  font-size: 1.1rem;
+  padding: 40px;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.account-content {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.admin-actions,
+.user-actions,
+.common-actions {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.admin-actions {
+  animation-delay: 0.1s;
+}
+
+.user-actions {
+  animation-delay: 0.2s;
+}
+
+.common-actions {
+  animation-delay: 0.3s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .account-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .account-content > h1 {
+    font-size: 2rem;
+  }
+  
+  .action-buttons {
+    grid-template-columns: 1fr;
+  }
+  
+  .logout-btn {
+    grid-column: span 1;
+  }
+  
+  .account-container {
+    padding: 80px 15px 20px;
+  }
+}

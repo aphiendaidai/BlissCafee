@@ -1,0 +1,98 @@
+.register-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.register-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 22px;
+}
+
+.register-container form input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.register-container form input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.register-container form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.register-container form button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.register-container form button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.register-container p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 15px;
+}
+
+/* ✅ Divider (nếu sau này thêm Google) */
+.divider {
+  margin: 20px 0;
+  position: relative;
+  text-align: center;
+}
+
+.divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #ddd;
+}
+
+.divider span {
+  background: white;
+  padding: 0 15px;
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ✅ Responsive */
+@media (max-width: 480px) {
+  .register-container {
+    margin: 40px 20px;
+    padding: 20px;
+  }
+
+  .register-container form input,
+  .register-container form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

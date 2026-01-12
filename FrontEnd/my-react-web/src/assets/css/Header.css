@@ -1,0 +1,27 @@
+.custom-navbar {
+  background-color: rgba(75, 46, 43, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: top 0.4s ease-in-out, background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.navbar-show {
+  top: 0;
+}
+
+.navbar-hide {
+  top: -100px;
+  transition: top 0.4s ease-in-out;
+}
+
+.order-button {
+  background-color: #FFD580;
+  color: #4B2E2B;
+  border: none;
+}
+
+.order-button:hover {
+  background-color: #e6c170;
+  color: #3a241f;
+}

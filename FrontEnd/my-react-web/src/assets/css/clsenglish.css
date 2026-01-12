@@ -1,0 +1,38 @@
+.clb-english-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fffdf8;
+}
+
+.clb-header {
+  background: linear-gradient(135deg, #b9b4af 30%, #ffffff 100%);
+}
+.clb-wrapper {
+  margin: 50px auto;
+  padding: 0 40px;
+}
+
+.clb-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #5e3c20;
+}
+
+.clb-subtitle {
+  font-size: 1.3rem;
+  color: #a87b4b;
+  margin-bottom: 1.5rem;
+}
+
+.clb-description {
+  font-size: 1rem;
+  color: #4a4a4a;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.clb-image {
+  border-radius: 12px;
+  max-height: 400px;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}

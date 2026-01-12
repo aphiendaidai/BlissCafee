@@ -1,0 +1,51 @@
+/* Reset toàn cục để tránh tràn */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+.hero-wrapper {
+  margin-top: 70px; /* Để tránh bị header che */
+  padding: 0;
+  
+}
+
+.hero-slide {
+  position: relative;
+  width: 100%;
+  height: 510px; /* Không quá to */
+  overflow: hidden;
+  background-color: #fefcf9;
+  border-radius: 10px;
+}
+
+.hero-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+
+.hero-overlay-text {
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #4b2e2e;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}

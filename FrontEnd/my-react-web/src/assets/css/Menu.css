@@ -1,0 +1,79 @@
+.menu-item {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background-color: #fff7f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    transition: transform 0.5s ease;
+}
+
+.menu-wrapper {
+  margin-top: 20px;
+  padding: 0 40px;
+}
+
+
+.menu-item img {
+  width: 100%;
+  height: 70%;
+  object-fit: contain;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  
+}
+
+.menu-item-text {
+  height: 30%;
+  text-align: center;
+  padding: 10px;
+  color: #4b2e2e;
+}
+
+.menu-item-text h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.menu-item-text p {
+  margin: 5px 0 0;
+  font-size: 0.95rem;
+  color: #6b4f4f;
+}
+
+
+.menu-item:hover img {
+  transform: scale(1.05); /* phóng to 5% */
+}
+
+.menu-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #5a3e2b; /* Tông màu cà phê nâu */
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  font-family: 'Georgia', 'Times New Roman', serif;
+  letter-spacing: 2px;
+}
+.menu-item-text p,
+.menu-description {
+  font-size: 0.95rem;
+  color: #5c4b3b; /* Màu nâu nhẹ, dễ nhìn */
+  margin-top: 8px;
+  line-height: 1.5;
+  text-align: center;
+  padding: 0 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: color 0.3s ease;
+}
+
+.menu-description:hover {
+  color: #3d2c1a; /* Đậm hơn khi hover */
+}
