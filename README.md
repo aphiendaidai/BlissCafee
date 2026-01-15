@@ -115,7 +115,6 @@ Admin Dashboard
 <img width="945" height="437" alt="image" src="https://github.com/user-attachments/assets/da1f5f30-ff16-480a-aaa6-c41a949207c5" />
 
 
-(Lưu ý: Hãy tạo thư mục images trong repo và bỏ ảnh chụp màn hình vào đó, đặt tên tương ứng)
 
 🚀 Hướng dẫn cài đặt (Installation)
 
@@ -155,12 +154,14 @@ npm run dev
 
 Frontend sẽ chạy tại: http://localhost:5173
 
-📞 Liên hệ
+📬 Liên hệ (Contact)
 
-Nếu bạn có câu hỏi hoặc muốn đóng góp cho dự án, vui lòng liên hệ:
+Nếu bạn quan tâm đến dự án, vui lòng liên hệ:
 
-Email: [Email của ông]
+A Phiên - Software Engineer
 
-Facebook/LinkedIn: [Link Profile của ông]
+Email: aphien629@gmail.com
+
+Phone: 0986712687
 
 © 2025 Bliss Cafe Project. Built with ❤️ and Coffee.
